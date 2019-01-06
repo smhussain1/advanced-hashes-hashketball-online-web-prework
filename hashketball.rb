@@ -15,11 +15,17 @@ def game_hash
     } 
     }
     
-    :away => {:team_name => :colors => :players =>
-  }
-
-
-
+    :away => {:team_name => '', :colors => [], :players => {"" => 
+      :number
+      :shoe
+      :points
+      :rebounds
+      :assists
+      :steals
+      :blocks
+      :slam_dunks
+    } 
+    }
 
 
 
