@@ -99,14 +99,19 @@ end
 
 # drill down into game_hash - home/away - players - points 
 def num_points_scored(name)
-  game_hash.each do |location, players|
+  game_hash.each do |location, values|
     binding.pry 
-    players.each do |points| 
-      return points 
+    x = if values == :players
+    x.each do |data, points| 
+    y = if points == :points 
+    y.each do |points_scored, count|
+      count
+    end 
     end
   end 
+  end 
 end 
-
+end 
 
 
 
