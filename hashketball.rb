@@ -97,21 +97,20 @@ def game_hash
     }
 end 
 
-# drill down into game_hash - home/away - players - points 
+
+# for the name passed in to the argument, return the shots scored for the played whos name it is.
 def num_points_scored(name)
-  game_hash.each do |location, values|
-    binding.pry 
-    x = if values == :players
-    x.each do |data, points| 
-    y = if points == :points 
-    y.each do |points_scored, count|
-      count
-    end 
-    end
-  end 
-  end 
+  #binding.pry 
+  game_hash
+  if game_hash[:home][:team_name][:players].key == name 
+    :players.each do |points, numbers| 
+      return game_hash[:home][:team_name][:players] numbers end 
+  elsif game_hash[:away][:team_name][:players].key == name 
+    :players.each do |points, numbers| 
+      return game_hash[:away][:team_name][:players] numbers end 
 end 
-end 
+end
+end
 
 
 
