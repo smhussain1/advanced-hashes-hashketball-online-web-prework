@@ -164,7 +164,7 @@ end
 def player_stats(name)
   #stats = {}
   if game_hash[:home][:players] == name 
-    binding.pry
+    #binding.pry
     game_hash[:home][:players][name]
      
   elsif game_hash[:away][:players] == name 
