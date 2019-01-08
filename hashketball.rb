@@ -163,7 +163,8 @@ end
 
 def player_stats(name)
   stats = {}
-  
+  if game_hash[:home][:players] == name 
+    
   
 
 
