@@ -135,11 +135,12 @@ def team_colors(team_name)
   end 
 end 
 
-def team_name(teams)
-  if game_hash[:home].key?(teams) 
-    game_hash[:home][team_names]
- elsif game_hash[:away].key?(teams)
-    game_hash[:away][team_names]
-  end 
+def team_names
+  team_array = []
+    team_array << game_hash[:home][:team_name]
+    team_array << game_hash[:away][:team_name]
+  team_array
 end 
+
+
 
