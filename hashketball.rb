@@ -149,14 +149,11 @@ end
 def player_numbers(name)
   game_hash
   numbers = []
-
-
-  if game_hash[:home][:team_name] == name 
+    if game_hash[:home][:team_name] == name 
     game_hash[:home][:players].each do |key, value| 
       numbers << value[:number] 
       end 
-     
-  elsif game_hash[:away][:team_name] == name 
+    elsif game_hash[:away][:team_name] == name 
     game_hash[:away][:players].each do |key, value|
       numbers << value[:number] 
     end 
@@ -166,5 +163,6 @@ end
 
 def player_stats(name)
   stats = {}
+  
 
 
