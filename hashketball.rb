@@ -163,6 +163,8 @@ def player_stats(name)
   end 
  end 
 
+# search for largest shoe size, use this to ID player in question, then pull the rebounds for that player and return this value.
+
 def big_shoe_rebound
   
 
