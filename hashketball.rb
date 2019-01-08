@@ -166,8 +166,8 @@ def player_stats(name)
   if game_hash[:home][:players][name]
     return game_hash[:home][:players][name]  
      
-  elsif game_hash[:away][:players] == name 
-    game_hash[:away][:players][name]    
+  elsif game_hash[:away][:players][name]
+    return game_hash[:away][:players][name]    
   end 
   stats 
 end 
