@@ -169,7 +169,7 @@ def player_stats(name)
   elsif game_hash[:away][:players][name]
     return game_hash[:away][:players][name]    
   end 
-  stats 
+ 
 end 
   
 
