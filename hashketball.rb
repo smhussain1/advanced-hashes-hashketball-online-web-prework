@@ -165,13 +165,13 @@ def player_stats(name)
   stats = {}
   if game_hash[:home][:players] == name 
     binding.pry
-    game_hash[:home][:players].each do |hash|
-      stats << hash 
+    game_hash[:home][:players].each do |key, value|
+      stats << key, value 
     end 
      
   elsif game_hash[:away][:players] == name 
-    game_hash[:away][:players].each do |hash|
-      stats << hash 
+    game_hash[:away][:players].each do |key, value|
+      stats << key, value 
     end 
   end 
 end 
