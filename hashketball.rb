@@ -97,12 +97,6 @@ def game_hash
     }
 end 
 
-
-# for the name passed in to the argument, return the shots scored for the #played whos name it is.
-#  hash            key       key           val               key
-  # game_hash = {:home => {:team_name => 'Brooklyn Nets', :colors =>
-#        value           key           key               key       value #["Black", "White"], :players => {"Alan Anderson" => {:number => 0,etc.
-
 def num_points_scored(name)
   #binding.pry 
   game_hash
@@ -168,6 +162,8 @@ def player_stats(name)
     return game_hash[:away][:players][name]    
   end 
  end 
+
+def big_shoe_rebound
   
 
 
