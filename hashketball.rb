@@ -162,7 +162,7 @@ def player_numbers(name)
 end 
 
 def player_stats(name)
-  stats = hash.new 
+  stats = {}
   if game_hash[:home][:players] == name 
     binding.pry
     stats << game_hash[:home][:players][name]        #.each do |key, value|
