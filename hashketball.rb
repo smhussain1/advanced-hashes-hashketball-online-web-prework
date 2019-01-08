@@ -142,5 +142,20 @@ def team_names
   team_array
 end 
 
+#  hash            key       key           val               key
+  # game_hash = {:home => {:team_name => 'Brooklyn Nets', :colors =>
+#        value           key           key               key       value #["Black", "White"], :players => {"Alan Anderson" => {:number => 0,etc.
 
+def player_numbers(team_name)
+  game_hash
+  home_team_numbers = []
+  away_team_numbers = []
+
+  if game_hash[:home][:team_name].has_value?(team_name)
+    home_team_numbers << game_hash[:home][team_name][:players][:number]
+    
+  elsif game_hash[:away][:team_name].has_value?(team_name)
+    away_team_numbers << game_hash[:away][team_name][:players][:number]
+  end
+end 
 
