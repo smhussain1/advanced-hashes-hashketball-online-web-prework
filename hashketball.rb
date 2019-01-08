@@ -162,11 +162,12 @@ def player_numbers(name)
 end 
 
 def player_stats(name)
-  stats = {}
+  #stats = {}
   if game_hash[:home][:players] == name 
     game_hash[:home][:players][name]
     
-  elsif 
+  elsif game_hash[:away][:players] == name 
+    game_hash[:away][:players][name]
   
 
 
