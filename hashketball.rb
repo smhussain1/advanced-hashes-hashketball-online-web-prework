@@ -146,16 +146,21 @@ end
   # game_hash = {:home => {:team_name => 'Brooklyn Nets', :colors =>
 #        value           key           key               key       value #["Black", "White"], :players => {"Alan Anderson" => {:number => 0,etc.
 
-def player_numbers(team_name)
+def player_numbers(name)
   game_hash
-  home_team_numbers = []
-  away_team_numbers = []
+  numbers = []
 
-  if game_hash[:home][:team_name].has_value?(team_name)
-    home_team_numbers << game_hash[:home][team_name][:players][:number]
-    
-  elsif game_hash[:away][:team_name].has_value?(team_name)
-    away_team_numbers << game_hash[:away][team_name][:players][:number]
+
+  if game_hash[:home][:team_name] == name 
+    game_hash[:home][:players].each do |key, value| 
+      numbers << value[:number] 
+      end 
+     
+  elsif game_hash[:away][:team_name] == name 
+    game_hash[:away][:players].each do |key, value|
+      numbers << value[:number] 
+    end 
   end
+  numbers 
 end 
 
