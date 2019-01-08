@@ -113,7 +113,6 @@ def num_points_scored(name)
   elsif game_hash[:away][:players].key?(name) 
   #binding.pry 
   game_hash[:away][:players][name][:points]
-  
 end
 end
 
@@ -126,22 +125,21 @@ def shoe_size(name)
   #binding.pry 
   game_hash[:away][:players][name][:shoe]
   end 
-  
 end 
 
-def team_colors(team_colors)
-  if game_hash[:home].key?(team_colors) 
-    game_hash[:home](team_name)
- elsif game_hash[:away].key?(team_colors)
-    game_hash[:away].key?(team_colors)
+def team_colors(team_name)
+  if game_hash[:home].has_value?(team_name) 
+    game_hash[:home][:colors]
+ elsif game_hash[:away].has_value?(team_name)
+    game_hash[:away][:colors]
   end 
 end 
 
-def team_name(team_name)
-  if game_hash[:home].key?(team_name) 
-    game_hash[:home](team_name)
- elsif game_hash[:away].key?(team_name)
-    game_hash[:away].key?(team_name)
+def team_name(teams)
+  if game_hash[:home].key?(teams) 
+    game_hash[:home][team_names]
+ elsif game_hash[:away].key?(teams)
+    game_hash[:away][team_names]
   end 
 end 
 
