@@ -129,10 +129,19 @@ def shoe_size(name)
   
 end 
 
+def team_colors(team_colors)
+  if game_hash[:home].key?(team_colors) 
+    game_hash[:home](team_name)
+ elsif game_hash[:away].key?(team_colors)
+    game_hash[:away].key?(team_colors)
+  end 
+end 
 
-
-
-
-
-
+def team_name(team_name)
+  if game_hash[:home].key?(team_name) 
+    game_hash[:home](team_name)
+ elsif game_hash[:away].key?(team_name)
+    game_hash[:away].key?(team_name)
+  end 
+end 
 
