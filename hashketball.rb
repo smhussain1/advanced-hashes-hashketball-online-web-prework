@@ -164,3 +164,7 @@ def player_numbers(name)
   numbers 
 end 
 
+def player_stats(name)
+  stats = {}
+
+
