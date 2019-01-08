@@ -162,7 +162,7 @@ def player_numbers(name)
 end 
 
 def player_stats(name)
-  stats = {}
+  stats = []
   if game_hash[:home][:players] == name 
     binding.pry
     game_hash[:home][:players].each do |key, value|
