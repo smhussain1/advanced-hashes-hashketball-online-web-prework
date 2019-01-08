@@ -106,17 +106,24 @@ end
 def num_points_scored(name)
   #binding.pry 
   game_hash
-  if game_hash[:home][:players].key == name 
-    :players.each do |player_name, points| 
-      points.each do |points, scored| scored end
-    end 
+  # if game_hash[:home][:players].key?(name)
+  #   :players.each do |player_name, points| 
+  #     points.each do |points, scored| scored end
+  #   end 
+  if game_hash[:home][:players].key?(name) 
+  #binding.pry
+  game_hash[:home][:players][name][:points]
   
-  elsif game_hash[:away][:players].key == name 
-    :players.each do |player_name, points| 
-      points.each do |points, scored| scored end
-    end 
+  elsif game_hash[:away][:players].key?(name) 
+  #binding.pry 
+  game_hash[:away][:players][name][:points]
+  
 end
 end
+
+
+
+
 
 
 
