@@ -166,12 +166,12 @@ def player_stats(name)
   if game_hash[:home][:players] == name 
     binding.pry
     game_hash[:home][:players].each do |key, value|
-      stats << key, value 
+      stats << value 
     end 
      
   elsif game_hash[:away][:players] == name 
     game_hash[:away][:players].each do |key, value|
-      stats << key, value 
+      stats << value 
     end 
   end 
 end 
