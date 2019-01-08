@@ -168,6 +168,8 @@ def player_stats(name)
     
   elsif game_hash[:away][:players] == name 
     game_hash[:away][:players][name]
+  end 
+end 
   
 
 
